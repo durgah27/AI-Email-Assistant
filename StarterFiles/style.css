@@ -1,0 +1,106 @@
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  resize: both;
+  overflow: auto;
+  z-index: 999999 !important;
+}
+
+#chatbot-header {
+  background-color: #f1f3f4;
+  color: #202124;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid #dadce0;
+  cursor: move;
+}
+
+#chatbot-header button {
+  background: none;
+  border: none;
+  color: #5f6368;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#chatbot-messages {
+  flex-grow: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background-color: #fff;
+  scrollbar-width: thin;
+  scrollbar-color: #c0c4c9 transparent;
+}
+
+#chatbot-input-area {
+  display: flex;
+  border-top: 1px solid #dadce0;
+  padding: 8px;
+  background: #fff;
+}
+
+#chatbot-input {
+  flex-grow: 1;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  outline: none;
+  color: #202124;
+  background:rgba(26, 115, 232, 0.15);
+  transition: background 0.2s;
+  border-radius: 12px 0px 0px 12px;
+}
+
+#send-message{
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0px 12px 12px 0px;
+  transition: background 0.2s;
+}
+ #clear-chat {
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 10px;
+  transition: background 0.2s;
+}
+
+#chatbot-messages div {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+#chatbot-messages div.ai {
+  background-color: #f1f3f4;
+  align-self: flex-start;
+}
+
+#chatbot-messages div.you {
+  background-color: #e8f0fe;
+  align-self: flex-end;
+}
+
+#send-message { background-color: #1a73e8; color: white; }
+#send-message:hover { background-color: #165fc1; }
+#clear-chat { background-color: #f44336; color: white; }
